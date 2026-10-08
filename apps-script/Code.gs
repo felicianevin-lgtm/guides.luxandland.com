@@ -1,7 +1,8 @@
 /**
  * guides.luxandland.com -> Follow Up Boss (Cindy Litzinger's account, realcindylitz.followupboss.com)
- * Deploy as a Web App (Execute as: Me · Who has access: Anyone) from felicia@luxandland.com or cindy@luxandland.com.
- * Paste the /exec URL into the site: python build_site_cindy.py --endpoint <url>  (then push).
+ * Deployed 10/8/26 as a Web App (Execute as: Me · Who has access: Anyone) from teamcindy@prorevas.com, project "guides.luxandland.com -> FUB".
+ * /exec URL: https://script.google.com/macros/s/AKfycbx9SyIBHPrmikPBbNSfYC5AWVeQKVbEy6dgXv5JqeOHboyAugslPX0W3iUjYIi6o-hBNQ/exec
+ * Baked into the site with: python build_site_cindy.py --endpoint <url>  (then push).
  *
  * MODES (one Script Property):
  *   LOG ONLY (default) – no FUB_API_KEY property: every submission is appended to the log sheet (if LOG_SHEET_ID is set), nothing goes to FUB.
@@ -17,11 +18,11 @@ const LOG_TAB = 'Leads';
 const LOG_HEADERS = ['Timestamp', 'Offer', 'Name', 'Email', 'Phone', 'Address', 'Interest', 'Message', 'Consent', 'Page', 'Src', 'FUB result', 'FUB id'];
 
 // Plan ids are filled in by _build/fub_build_cindy.py (it prints them). Keep in sync with the FUB account.
-const PLAN_ID_QR_GUIDE     = 33;     // "QR: Why Didn't It Sell"
-const PLAN_ID_QR_PLAN      = 34;      // "QR: Relaunch Plan"
-const PLAN_ID_QR_TIMELINE  = 35;  // "QR: Fall-to-Spring Timeline"
-const PLAN_ID_QR_NEXTYEAR  = 36;  // "QR: Thinking About Next Year"
-const PLAN_ID_WEBSITE      = 37;   // "Website Contact (guides.luxandland.com)"
+const PLAN_ID_QR_GUIDE     = __PLAN_GUIDE__;     // "QR: Why Didn't It Sell"
+const PLAN_ID_QR_PLAN      = __PLAN_PLAN__;      // "QR: Relaunch Plan"
+const PLAN_ID_QR_TIMELINE  = __PLAN_TIMELINE__;  // "QR: Fall-to-Spring Timeline"
+const PLAN_ID_QR_NEXTYEAR  = __PLAN_NEXTYEAR__;  // "QR: Thinking About Next Year"
+const PLAN_ID_WEBSITE      = __PLAN_CONTACT__;   // "Website Contact (guides.luxandland.com)"
 const QR_PLAN_IDS = [PLAN_ID_QR_GUIDE, PLAN_ID_QR_PLAN, PLAN_ID_QR_TIMELINE, PLAN_ID_QR_NEXTYEAR];
 
 // Tags are ONE WORD (BoldTrail splits hashtags on spaces; the FUB->BoldTrail Zap carries them over).
