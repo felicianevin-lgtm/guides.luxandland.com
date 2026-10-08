@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cindy Litzinger · Luxury seller guides</title>
+<meta name="description" content="Free luxury seller guides and a real home value from closed sales. Cindy Litzinger, REALTOR® with eXp Luxury, Placer, Sacramento, and El Dorado Counties.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0E0D0B;--gold:#B19A55;--gold-dk:#8f7a40;--champ:#C9BB9C;--cream:#FCFBF8;--sand:#E5DFD2;--paper:#fff;--muted:#6E675C;--line:#E5DFD2}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Montserrat',Arial,sans-serif;color:#2B2B2B;background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased}
+.serif{font-family:'Cormorant Garamond',Georgia,serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.hero{background:var(--cream);position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero .bg{position:absolute;inset:0;background:url(img/hero.jpg) center/cover;opacity:1}
+.hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(14,13,11,.25),rgba(14,13,11,.55) 55%,rgba(252,251,248,1) 100%)}
+.hero .wrap{position:relative;padding:28px 20px 40px}
+.hero .logo{width:250px;max-width:70%;display:block;margin-bottom:34px;background:rgba(8,8,8,.55);padding:10px 14px;border-radius:3px}
+.kick{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--champ);margin-bottom:12px;font-weight:600}
+.hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(34px,6vw,58px);line-height:1.02;margin:0 0 16px;max-width:14ch;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.hero h1 em{font-style:italic;color:var(--champ)}
+.hero p.lead{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(18px,2.4vw,22px);line-height:1.35;color:#f3eee2;margin:0 0 22px;max-width:52ch;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.rule{width:56px;height:1px;background:var(--gold);margin:0 0 18px}
+.pts{list-style:none;padding:0;margin:0 0 6px;font-size:14px;color:#f3eee2;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.pts li{padding-left:22px;position:relative;margin:0 0 8px}
+.pts li:before{content:"";position:absolute;left:0;top:9px;width:9px;height:1px;background:var(--gold)}
+.pts a{color:#fff}
+.grid{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
+@media(min-width:860px){.grid{grid-template-columns:1.15fr .85fr;gap:56px}.hero .wrap{padding:36px 20px 64px}}
+.cover{display:flex;gap:18px;align-items:center;margin-top:26px}
+.cover img{width:110px;border:1px solid #333;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.cover .meta{font-size:12px;color:#e6e0d2;line-height:1.5;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.cover .meta b{display:block;color:#fff;font-weight:500;font-size:14px;margin-bottom:3px}
+.card{background:var(--paper);border-top:3px solid var(--gold);padding:26px 22px 22px;box-shadow:0 24px 60px rgba(0,0,0,.25);color:#1d1d1d}
+@media(min-width:860px){.card{margin-top:-8px}}
+.card h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;margin:0 0 4px;line-height:1.1;color:var(--ink)}
+.card .sub{font-size:13px;color:var(--muted);margin:0 0 18px}
+label{display:block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dk);margin:12px 0 5px;font-weight:600}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;padding:12px 12px;border:1px solid #cfc8b8;background:#fff;font:inherit;font-size:16px;border-radius:2px}
+textarea{min-height:90px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(177,154,85,.25)}
+.consent{display:flex;gap:10px;align-items:flex-start;margin:16px 0 14px;font-size:11px;line-height:1.45;color:#555}
+.consent input{margin-top:3px;flex:0 0 auto}
+.btn{display:block;width:100%;padding:15px 18px;background:var(--ink);color:#fff;border:0;font:inherit;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;cursor:pointer;border-radius:2px;transition:background .2s;text-align:center;text-decoration:none}
+.btn:hover{background:#222}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.gold:hover{background:#c4ad66}
+.btn.line{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.fine{font-size:10.5px;color:#8a8a8a;margin-top:10px;line-height:1.45}
+.err{color:#a13a2b;font-size:12px;margin-top:8px;display:none}
+.thanks{display:none}
+.thanks h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:28px;margin:0 0 8px;color:var(--ink)}
+.thanks p{font-size:14px;color:#444;margin:0 0 14px}
+.thanks .btn{margin-bottom:10px}
+.thanks .or{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:center;margin:14px 0 10px}
+.band{background:var(--cream);padding:44px 0}
+.band h3,.cindy h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;margin:0 0 6px;color:var(--ink)}
+.k{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:8px;font-weight:600}
+.cols{display:grid;grid-template-columns:1fr;gap:22px;margin-top:22px}
+@media(min-width:700px){.cols{grid-template-columns:repeat(3,1fr)}}
+.col b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:19px;color:var(--ink);margin-bottom:4px}
+.col b span{color:var(--gold);margin-right:6px;font-weight:400}
+.col p{font-size:13.5px;color:#444;margin:0}
+.cindy{background:#fff;padding:40px 0;border-top:1px solid var(--line)}
+.cindy .row{display:grid;grid-template-columns:1fr;gap:24px;align-items:center}
+@media(min-width:700px){.cindy .row{grid-template-columns:220px 1fr}}
+.cindy img.hs{width:220px;max-width:60%;display:block;margin:0 auto}
+.cindy p{font-size:14.5px;color:#333;max-width:64ch;margin:0 0 10px}
+.cindy .contact{font-size:13.5px;line-height:1.8;color:#444}
+.cindy .contact a{color:var(--gold-dk);text-decoration:none}
+.quote{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;color:var(--ink);line-height:1.3;border-left:2px solid var(--gold);padding-left:16px;margin:0 0 14px}
+footer{background:var(--ink);color:#8a8a8a;padding:26px 0 34px;font-size:10.5px;line-height:1.6}
+footer .eho{display:inline-block;width:12px;height:12px;vertical-align:middle;margin-right:5px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 8 L8 42 L18 42 L18 92 L82 92 L82 42 L92 42 Z' fill='none' stroke='%238a8a8a' stroke-width='7' stroke-linejoin='round'/><rect x='32' y='50' width='36' height='8' fill='%238a8a8a'/><rect x='32' y='66' width='36' height='8' fill='%238a8a8a'/></svg>") center/contain no-repeat}
+footer b{color:#bdb5a4;font-weight:500}
+footer a{color:#bdb5a4}
+footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="bg"></div>
+  <div class="wrap">
+    <img class="logo" src="logo-white.png" alt="Cindy Litzinger Realty, Inc · eXp Realty | Luxury">
+    <div class="grid">
+      <div>
+        <div class="kick">Luxury seller guides · Placer, Sacramento &amp; El Dorado</div>
+        <h1>Your home came off the market. <em>That's not a verdict.</em></h1>
+        <div class="rule"></div>
+        <p class="lead">Four short guides on why luxury homes don't sell here, what a real relaunch looks like, and what to do this fall. Free, no pitch, and my full plan goes in writing before you sign anything.</p>
+        <ul class="pts">
+          <li><a href="/why-didnt-it-sell">Why Didn't It Sell?</a> · five honest reasons</li>
+          <li><a href="/the-relaunch-plan">The Relaunch Plan</a> · what changes the second time</li>
+          <li><a href="/fall-to-spring-timeline">The Fall-to-Spring Timeline</a> · month by month</li>
+          <li><a href="/thinking-about-next-year">Thinking About Next Year?</a> · three things to do this fall</li>
+        </ul>
+        <a class="btn gold" style="display:inline-block;width:auto;margin-top:18px" href="https://consumer.hifello.com/lp/67b76d6c869030003733f2ea" target="_blank" rel="noopener">What's my home worth today?</a>
+      </div>
+      <div class="card">
+        <form id="form" novalidate>
+          <h2>Let's talk about your home</h2>
+          <p class="sub">A second opinion, no strings. I'll reply the same day.</p>
+          <label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" required>
+          <label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+          <label for="phone">Mobile (optional)</label><input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel">
+          <label for="address">Property address</label><input type="text" id="address" name="address" autocomplete="street-address" placeholder="Street, City">
+          <label for="interest">I'm thinking about</label>
+          <select id="interest" name="interest"><option>Relaunching a home that didn't sell</option><option>Selling in the next 12 months</option><option>Selling and buying at the same time</option><option>Just want a real number for my home</option><option>Something else</option></select>
+          <label for="message">Anything I should know?</label><textarea id="message" name="message"></textarea>
+          <div class="consent"><input type="checkbox" id="consent" name="consent"><label for="consent" style="margin:0;letter-spacing:0;text-transform:none;font-weight:400;font-size:11px;color:#555">By providing my mobile number I give prior express written consent for Cindy Litzinger, eXp Realty, and their authorized representatives to contact me at the number above by call and text, including automated dialing, automated texts, and prerecorded or AI voice messages. Consent is not a condition of any purchase. Message and data rates may apply. Reply STOP to opt out. Optional if no mobile number is entered.</label></div>
+          <button class="btn" type="submit" id="submit">Send</button>
+          <div class="err" id="err">Please add your name and email.</div>
+          <p class="fine">See the <a href="/privacy" style="color:#8a8a8a">privacy policy</a>.</p>
+        </form>
+        <div class="thanks" id="thanks">
+          <h2>Got it.</h2>
+          <p>I'll be in touch today. If it's easier, call or text me at <a href="tel:+18054781412" style="color:#1d1d1d">805-478-1412</a>.</p>
+          <a class="btn gold" href="https://consumer.hifello.com/lp/67b76d6c869030003733f2ea" target="_blank" rel="noopener">What's my home worth today?</a>
+          <a class="btn line" href="https://calendly.com/realcindylitz/let-s-talk-about-selling-your-home" target="_blank" rel="noopener">Book a time with Cindy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cindy">
+  <div class="wrap">
+    <div class="row">
+      <img class="hs" src="img/cindy.png" alt="Cindy Litzinger">
+      <div>
+        <div class="k">About Cindy</div>
+        <h3>I grew up in Montana, and I still answer my own phone.</h3>
+        <p>I ran businesses before real estate, which is probably why I care so much about the plan being written down. My team and I work Placer, Sacramento, and El Dorado Counties, from Granite Bay and El Dorado Hills to Loomis, Auburn, Folsom, and East Sacramento, and homes that didn't sell the first time are a big part of what we do.</p>
+        <p class="quote">You will get a straight answer from me, in writing, before you sign anything.</p>
+        <div class="contact"><b>Cindy Litzinger</b> · REALTOR® · eXp Luxury · DRE 02055885<br><a href="tel:+18054781412">805-478-1412</a> · <a href="mailto:cindy@luxandland.com">cindy@luxandland.com</a> · <a href="https://luxandland.com">luxandland.com</a><br><a href="https://calendly.com/realcindylitz/let-s-talk-about-selling-your-home" target="_blank" rel="noopener">Book a time to talk →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="logo-white.png" alt="Cindy Litzinger Realty, Inc · eXp Realty | Luxury">
+    <b>Cindy Litzinger</b> · REALTOR® · DRE 02055885 · eXp Realty of Northern California, Inc., DRE 02188495, 915 Highland Pointe Dr Ste 250, Roseville, CA 95678<br>
+    <span class="eho"></span>Equal Housing Opportunity. This is not intended as a solicitation if your property is currently listed with another broker or if you are currently working with a licensed real estate professional. Buyer-origin statistics: IRS county-to-county migration data, 2022–23. <a href="/privacy">Privacy</a>
+  </div>
+</footer>
+
+<script>
+const LEAD_ENDPOINT = "";
+const $ = id => document.getElementById(id);
+$("form").addEventListener("submit", async e=>{
+  e.preventDefault();
+  const f=e.target, v=k=>f[k].value.trim();
+  if(!v("name")||!v("email")||!/^\S+@\S+\.\S+$/.test(v("email"))){ $("err").style.display="block"; return; }
+  if(v("phone") && !f.consent.checked){ $("err").textContent="Please check the consent box if you'd like me to text or call the number you entered, or leave the number blank."; $("err").style.display="block"; return; }
+  $("submit").disabled=true; $("submit").textContent="Sending…";
+  const payload={name:v("name"),email:v("email"),phone:v("phone"),address:v("address"),interest:v("interest"),message:v("message"),consent:f.consent.checked,offer:"contact",tags:["websitecontact"],source:"Website",page:location.href,ts:new Date().toISOString()};
+  try{ if(LEAD_ENDPOINT){ await fetch(LEAD_ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)}); } }catch(err){}
+  f.style.display="none"; $("thanks").style.display="block"; window.scrollTo({top:0,behavior:"smooth"});
+});
+</script>
+</body>
+</html>
