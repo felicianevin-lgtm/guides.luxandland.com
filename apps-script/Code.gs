@@ -75,11 +75,15 @@ function sendToFub_(d, offer, src, key) {
     const body = JSON.parse(r.getContentText() || '{}');
     const id = body.id;
     if (!id) return { result: 'FUB ERROR ' + r.getResponseCode() + ' ' + (body.errorMessage || r.getContentText()).slice(0, 200), id: '' };
+    // FUB's deduplicate=true merge does NOT add tags/stage to an existing person (verified 10/8/26), so apply them explicitly.
+    const upd = { tags: cfg.tags }; if (cfg.stage) upd.stage = cfg.stage;
+    const u = UrlFetchApp.fetch(FUB + 'people/' + id + '?mergeTags=true', { method: 'put', contentType: 'application/json', headers: auth, payload: JSON.stringify(upd), muteHttpExceptions: true });
+    const tagNote = u.getResponseCode() < 300 ? '' : ' (tag update ' + u.getResponseCode() + ')';
     UrlFetchApp.fetch(FUB + 'notes', { method: 'post', contentType: 'application/json', headers: auth, muteHttpExceptions: true,
       payload: JSON.stringify({ personId: id, subject: (offer === 'contact' ? 'Website contact' : 'Guide request: ' + offer),
         body: 'Requested: ' + offer + '\nProperty: ' + (d.address || '') + (d.interest ? '\nInterest: ' + d.interest : '') + (d.message ? '\nMessage: ' + d.message : '') +
               '\nConsent to call/text: ' + (d.consent ? 'YES' : 'no') + '\nPage: ' + (d.page || '') + (src ? '\nPostcard: ' + src : '') + '\nSubmitted: ' + (d.ts || new Date().toISOString()) }) });
-    let result = 'created/merged';
+    let result = 'created/merged' + tagNote;
     if (cfg.plan) {
       const already = QR_PLAN_IDS.indexOf(cfg.plan) >= 0 ? currentQrPlan_(id, auth) : null;
       if (already) {
