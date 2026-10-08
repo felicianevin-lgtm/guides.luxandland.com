@@ -97,7 +97,7 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
       <div class="card">
         <form id="form" novalidate>
           <h2 id="formtitle"></h2>
-          <p class="sub">Tell me where to send it. No pressure, and I actually pick up the phone.</p>
+          <p class="sub">Tell me where to send it. No pressure, and no pitch.</p>
           <label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" required>
           <label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
           <label for="phone">Mobile (optional)</label><input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel">
@@ -138,7 +138,7 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
       <img class="hs" src="img/cindy.png" alt="Cindy Litzinger">
       <div>
         <div class="k">About Cindy</div>
-        <h3>I grew up in Montana, and I still answer my own phone.</h3>
+        <h3>Luxury homes in Placer, Sacramento, and El Dorado Counties. A plan in writing, every time.</h3>
         <p>I ran businesses before real estate, which is probably why I care so much about the plan being written down. My team and I work Placer, Sacramento, and El Dorado Counties, from Granite Bay and El Dorado Hills to Loomis, Auburn, Folsom, and East Sacramento, and homes that didn't sell the first time are a big part of what we do.</p>
         <p class="quote">You will get a straight answer from me, in writing, before you sign anything.</p>
         <div class="contact"><b>Cindy Litzinger</b> · REALTOR® · eXp Luxury · DRE 02055885<br><a href="tel:+18054781412">805-478-1412</a> · <a href="mailto:cindy@luxandland.com">cindy@luxandland.com</a> · <a href="https://luxandland.com">luxandland.com</a><br><a href="https://calendly.com/realcindylitz/let-s-talk-about-selling-your-home" target="_blank" rel="noopener">Book a time to talk →</a></div>
@@ -157,7 +157,7 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
 
 <script>
 const LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbx9SyIBHPrmikPBbNSfYC5AWVeQKVbEy6dgXv5JqeOHboyAugslPX0W3iUjYIi6o-hBNQ/exec";   // Google Apps Script Web App /exec URL (apps-script/Code.gs) -> Follow Up Boss. Empty = demo mode (nothing sent).
-const o = {"kick": "Came off the market this year?", "h1": "The Fall-to-Spring <em>Timeline</em>", "lead": "The best spring sales in the foothills are built in October. Month by month, what I handle and what you handle, so the second time is the last time.", "pts": ["October: the walk-through, the number, the plan in writing", "November and December: the short list gets done", "January: photography and a private preview", "February and March: launch on a date we choose"], "name": "The Fall-to-Spring Timeline", "pages": "3 pages · PDF · free", "form": "Send me the timeline", "btn": "Send me the timeline", "dl": "Download the timeline", "file": "timeline.pdf", "tags": ["luxuryexpired", "qrtimeline"], "whyh": "Spring sells. October decides.", "whyp": "Out-of-area buyers shop in January and February, and the hills are green by March. A home that relists in January with last year's photos misses both.", "cols": [["1", "What I handle", "Valuation, vendors, photography, ads, the preview, the launch, the Friday calls."], ["2", "What you handle", "Pick a walk-through window, say yes or no to a short list, enjoy the holidays."], ["3", "Why October", "Everything after October is execution, and execution is my team's job."]], "tag": "timeline"};
+const o = {"kick": "Came off the market this year?", "h1": "The Fall-to-Spring <em>Timeline</em>", "lead": "The best spring sales in the foothills are built in October. Month by month, what I handle and what you handle, so the second time is the last time.", "pts": ["October: the walk-through, the number, the plan in writing", "November and December: the short list gets done", "January: photography and a private preview", "February and March: launch on a date we choose"], "name": "The Fall-to-Spring Timeline", "pages": "3 pages · PDF · free", "form": "Send me the timeline", "btn": "Send me the timeline", "dl": "Download the timeline", "file": "timeline.pdf", "tags": ["luxuryexpired", "qrtimeline"], "whyh": "Spring sells. October decides.", "whyp": "Out-of-area buyers shop in January and February, and the hills are green by March. A home that relists in January with last year's photos misses both.", "cols": [["1", "What I handle", "Valuation, vendors, photography, ads, the preview, the launch, the standing updates."], ["2", "What you handle", "Pick a walk-through window, say yes or no to a short list, enjoy the holidays."], ["3", "Why October", "Everything after October is execution, and execution is my team's job."]], "tag": "timeline"};
 const $ = id => document.getElementById(id);
 $("kick").textContent=o.kick; $("h1").innerHTML=o.h1; $("lead").textContent=o.lead;
 $("pts").innerHTML=o.pts.map(p=>`<li>${p}</li>`).join("");
