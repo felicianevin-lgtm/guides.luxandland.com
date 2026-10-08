@@ -66,8 +66,8 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);bo
 .col p{font-size:13.5px;color:#444;margin:0}
 .cindy{background:#fff;padding:40px 0;border-top:1px solid var(--line)}
 .cindy .row{display:grid;grid-template-columns:1fr;gap:24px;align-items:center}
-@media(min-width:700px){.cindy .row{grid-template-columns:220px 1fr}}
-.cindy img.hs{width:220px;max-width:60%;display:block;margin:0 auto}
+@media(min-width:700px){.cindy .row{grid-template-columns:300px 1fr;gap:40px}}
+.cindy img.hs{width:300px;max-width:80%;display:block;margin:0 auto;border-radius:14px;box-shadow:0 10px 30px rgba(14,13,11,.10)}
 .cindy p{font-size:14.5px;color:#333;max-width:64ch;margin:0 0 10px}
 .cindy .contact{font-size:13.5px;line-height:1.8;color:#444}
 .cindy .contact a{color:var(--gold-dk);text-decoration:none}
@@ -125,7 +125,7 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
 
 <section class="band">
   <div class="wrap">
-    <div class="k">Why this exists</div>
+    <div class="k">How I approach it</div>
     <h3 id="whyh"></h3>
     <p style="font-size:14.5px;max-width:64ch;margin:0" id="whyp"></p>
     <div class="cols" id="cols"></div>
@@ -135,12 +135,12 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
 <section class="cindy">
   <div class="wrap">
     <div class="row">
-      <img class="hs" src="img/cindy.png" alt="Cindy Litzinger">
+      <img class="hs" src="img/cindy-about.jpg" alt="Cindy Litzinger">
       <div>
         <div class="k">About Cindy</div>
-        <h3>Luxury homes in Placer, Sacramento, and El Dorado Counties. A plan in writing, every time.</h3>
-        <p>I ran businesses before real estate, which is probably why I care so much about the plan being written down. My team and I work Placer, Sacramento, and El Dorado Counties, from Granite Bay and El Dorado Hills to Loomis, Auburn, Folsom, and East Sacramento, and homes that didn't sell the first time are a big part of what we do.</p>
-        <p class="quote">You will get a straight answer from me, in writing, before you sign anything.</p>
+        <h3>Luxury and acreage homes in the Sierra foothills, represented with care.</h3>
+        <p>I'm Cindy Litzinger with eXp Luxury. My team and I specialize in luxury and acreage properties across Placer, Sacramento, and El Dorado Counties, from Granite Bay and El Dorado Hills to Loomis, Auburn, Folsom, and East Sacramento. Much of our work is with homeowners whose first listing didn't get the launch their property deserved.</p><p>We handle the valuation, the preparation, the photography, and the marketing personally, and you'll always know exactly where things stand.</p>
+        <p class="quote">Every home has its buyer. My job is to present yours beautifully and put it in front of the right one.</p>
         <div class="contact"><b>Cindy Litzinger</b> · REALTOR® · eXp Luxury · DRE 02055885<br><a href="tel:+18054781412">805-478-1412</a> · <a href="mailto:cindy@luxandland.com">cindy@luxandland.com</a> · <a href="https://luxandland.com">luxandland.com</a><br><a href="https://calendly.com/realcindylitz/let-s-talk-about-selling-your-home" target="_blank" rel="noopener">Book a time to talk →</a></div>
       </div>
     </div>
@@ -157,7 +157,7 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
 
 <script>
 const LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbx9SyIBHPrmikPBbNSfYC5AWVeQKVbEy6dgXv5JqeOHboyAugslPX0W3iUjYIi6o-hBNQ/exec";   // Google Apps Script Web App /exec URL (apps-script/Code.gs) -> Follow Up Boss. Empty = demo mode (nothing sent).
-const o = {"kick": "Came off the market this year?", "h1": "The Fall-to-Spring <em>Timeline</em>", "lead": "The best spring sales in the foothills are built in October. Month by month, what I handle and what you handle, so the second time is the last time.", "pts": ["October: the walk-through, the number, the plan in writing", "November and December: the short list gets done", "January: photography and a private preview", "February and March: launch on a date we choose"], "name": "The Fall-to-Spring Timeline", "pages": "3 pages · PDF · free", "form": "Send me the timeline", "btn": "Send me the timeline", "dl": "Download the timeline", "file": "timeline.pdf", "tags": ["luxuryexpired", "qrtimeline"], "whyh": "Spring sells. October decides.", "whyp": "Out-of-area buyers shop in January and February, and the hills are green by March. A home that relists in January with last year's photos misses both.", "cols": [["1", "What I handle", "Valuation, vendors, photography, ads, the preview, the launch, the standing updates."], ["2", "What you handle", "Pick a walk-through window, say yes or no to a short list, enjoy the holidays."], ["3", "Why October", "Everything after October is execution, and execution is my team's job."]], "tag": "timeline"};
+const o = {"kick": "Came off the market this year?", "h1": "The Fall-to-Spring <em>Timeline</em>", "lead": "The best spring sales in the foothills are built in October. Month by month, what I handle and what you handle, so the second time is the last time.", "pts": ["October: the walk-through, the number, the plan in writing", "November and December: the short list gets done", "January: photography and a private preview", "February and March: launch on a date we choose"], "name": "The Fall-to-Spring Timeline", "pages": "3 pages · PDF · free", "form": "Send me the timeline", "btn": "Send me the timeline", "dl": "Download the timeline", "file": "timeline.pdf", "tags": ["luxuryexpired", "qrtimeline"], "whyh": "The best spring launches are planned in the fall.", "whyp": "Out-of-area buyers begin searching in January, and the foothills are at their most beautiful by March. Using the fall to prepare means your home arrives on the market fresh, complete, and ahead of the neighbors.", "cols": [["1", "Fall", "A walk-through, a valuation from closed sales, and the short list of updates that are actually worth doing."], ["2", "Winter", "Updates completed, photography and video captured, and a private preview to my buyers and agents."], ["3", "Spring", "Launch on a date we choose together, with a fresh number and a fresh story."]], "tag": "timeline"};
 const $ = id => document.getElementById(id);
 $("kick").textContent=o.kick; $("h1").innerHTML=o.h1; $("lead").textContent=o.lead;
 $("pts").innerHTML=o.pts.map(p=>`<li>${p}</li>`).join("");

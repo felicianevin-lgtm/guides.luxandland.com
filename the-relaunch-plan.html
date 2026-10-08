@@ -66,8 +66,8 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);bo
 .col p{font-size:13.5px;color:#444;margin:0}
 .cindy{background:#fff;padding:40px 0;border-top:1px solid var(--line)}
 .cindy .row{display:grid;grid-template-columns:1fr;gap:24px;align-items:center}
-@media(min-width:700px){.cindy .row{grid-template-columns:220px 1fr}}
-.cindy img.hs{width:220px;max-width:60%;display:block;margin:0 auto}
+@media(min-width:700px){.cindy .row{grid-template-columns:300px 1fr;gap:40px}}
+.cindy img.hs{width:300px;max-width:80%;display:block;margin:0 auto;border-radius:14px;box-shadow:0 10px 30px rgba(14,13,11,.10)}
 .cindy p{font-size:14.5px;color:#333;max-width:64ch;margin:0 0 10px}
 .cindy .contact{font-size:13.5px;line-height:1.8;color:#444}
 .cindy .contact a{color:var(--gold-dk);text-decoration:none}
@@ -125,7 +125,7 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
 
 <section class="band">
   <div class="wrap">
-    <div class="k">Why this exists</div>
+    <div class="k">How I approach it</div>
     <h3 id="whyh"></h3>
     <p style="font-size:14.5px;max-width:64ch;margin:0" id="whyp"></p>
     <div class="cols" id="cols"></div>
@@ -135,12 +135,12 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
 <section class="cindy">
   <div class="wrap">
     <div class="row">
-      <img class="hs" src="img/cindy.png" alt="Cindy Litzinger">
+      <img class="hs" src="img/cindy-about.jpg" alt="Cindy Litzinger">
       <div>
         <div class="k">About Cindy</div>
-        <h3>Luxury homes in Placer, Sacramento, and El Dorado Counties. A plan in writing, every time.</h3>
-        <p>I ran businesses before real estate, which is probably why I care so much about the plan being written down. My team and I work Placer, Sacramento, and El Dorado Counties, from Granite Bay and El Dorado Hills to Loomis, Auburn, Folsom, and East Sacramento, and homes that didn't sell the first time are a big part of what we do.</p>
-        <p class="quote">You will get a straight answer from me, in writing, before you sign anything.</p>
+        <h3>Luxury and acreage homes in the Sierra foothills, represented with care.</h3>
+        <p>I'm Cindy Litzinger with eXp Luxury. My team and I specialize in luxury and acreage properties across Placer, Sacramento, and El Dorado Counties, from Granite Bay and El Dorado Hills to Loomis, Auburn, Folsom, and East Sacramento. Much of our work is with homeowners whose first listing didn't get the launch their property deserved.</p><p>We handle the valuation, the preparation, the photography, and the marketing personally, and you'll always know exactly where things stand.</p>
+        <p class="quote">Every home has its buyer. My job is to present yours beautifully and put it in front of the right one.</p>
         <div class="contact"><b>Cindy Litzinger</b> · REALTOR® · eXp Luxury · DRE 02055885<br><a href="tel:+18054781412">805-478-1412</a> · <a href="mailto:cindy@luxandland.com">cindy@luxandland.com</a> · <a href="https://luxandland.com">luxandland.com</a><br><a href="https://calendly.com/realcindylitz/let-s-talk-about-selling-your-home" target="_blank" rel="noopener">Book a time to talk →</a></div>
       </div>
     </div>
@@ -157,7 +157,7 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
 
 <script>
 const LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbx9SyIBHPrmikPBbNSfYC5AWVeQKVbEy6dgXv5JqeOHboyAugslPX0W3iUjYIi6o-hBNQ/exec";   // Google Apps Script Web App /exec URL (apps-script/Code.gs) -> Follow Up Boss. Empty = demo mode (nothing sent).
-const o = {"kick": "What I do differently", "h1": "The Relaunch <em>Plan</em>", "lead": "Step by step, what my team and I do with a luxury home that didn't sell the first time, what it costs you up front (nothing), and exactly what you'll hear from me every week.", "pts": ["The walk-through: 45 minutes, what to fix and what to leave alone", "The number: from closed sales, run by people, not a website", "The reset: twilight, drone, video, floor plans, pre-inspection", "The launch: previewed to my buyers and agents first", "The Friday call, from me, until it closes"], "name": "The Relaunch Plan", "pages": "4 pages · PDF · free", "form": "Send me the plan", "btn": "Send me the plan", "dl": "Download the plan", "file": "plan.pdf", "tags": ["luxuryexpired", "qrplan"], "whyh": "Compare it line by line with anyone else who calls.", "whyp": "If the only next step an agent can name is a price reduction, keep interviewing. Relisting isn't a plan. This is.", "cols": [["1", "Priced to the closings", "Not to what the neighbors are asking. You see the three homes a buyer will compare yours to."], ["2", "Marketed where buyers are", "Ads in the Bay Area, Los Angeles, San Diego, Phoenix, and Reno, the eXp Luxury network, and the relocation agents who bring buyers to the foothills."], ["3", "Decisions built in", "Weeks 2, 4, 8, and 12 are set before launch, so a price change is a decision we make together, never the default."]], "tag": "plan"};
+const o = {"kick": "What I do differently", "h1": "The Relaunch <em>Plan</em>", "lead": "Step by step, what my team and I do with a luxury home that didn't sell the first time, what it costs you up front (nothing), and exactly what you'll hear from me every week.", "pts": ["The walk-through: 45 minutes, what to fix and what to leave alone", "The number: from closed sales, run by people, not a website", "The reset: twilight, drone, video, floor plans, pre-inspection", "The launch: previewed to my buyers and agents first", "A standing update from me, until it closes"], "name": "The Relaunch Plan", "pages": "4 pages · PDF · free", "form": "Send me the plan", "btn": "Send me the plan", "dl": "Download the plan", "file": "plan.pdf", "tags": ["luxuryexpired", "qrplan"], "whyh": "A clear plan, agreed on before we begin.", "whyp": "Every step, the timing, and what happens if the market pushes back are decided together before your home goes live. You'll know what my team is working on each week, and why.", "cols": [["1", "Preparation", "A walk-through to decide what to update and what to leave alone, then the vendors and scheduling handled for you."], ["2", "Presentation", "Photography, drone, video, floor plans, and a pre-inspection, so the home launches complete."], ["3", "Placement", "Previewed to my buyers and the region's top agents first, then marketed in the Bay Area, Los Angeles, San Diego, Phoenix, and Reno, where today's buyers come from."]], "tag": "plan"};
 const $ = id => document.getElementById(id);
 $("kick").textContent=o.kick; $("h1").innerHTML=o.h1; $("lead").textContent=o.lead;
 $("pts").innerHTML=o.pts.map(p=>`<li>${p}</li>`).join("");

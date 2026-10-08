@@ -66,8 +66,8 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);bo
 .col p{font-size:13.5px;color:#444;margin:0}
 .cindy{background:#fff;padding:40px 0;border-top:1px solid var(--line)}
 .cindy .row{display:grid;grid-template-columns:1fr;gap:24px;align-items:center}
-@media(min-width:700px){.cindy .row{grid-template-columns:220px 1fr}}
-.cindy img.hs{width:220px;max-width:60%;display:block;margin:0 auto}
+@media(min-width:700px){.cindy .row{grid-template-columns:300px 1fr;gap:40px}}
+.cindy img.hs{width:300px;max-width:80%;display:block;margin:0 auto;border-radius:14px;box-shadow:0 10px 30px rgba(14,13,11,.10)}
 .cindy p{font-size:14.5px;color:#333;max-width:64ch;margin:0 0 10px}
 .cindy .contact{font-size:13.5px;line-height:1.8;color:#444}
 .cindy .contact a{color:var(--gold-dk);text-decoration:none}
@@ -125,7 +125,7 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
 
 <section class="band">
   <div class="wrap">
-    <div class="k">Why this exists</div>
+    <div class="k">How I approach it</div>
     <h3 id="whyh"></h3>
     <p style="font-size:14.5px;max-width:64ch;margin:0" id="whyp"></p>
     <div class="cols" id="cols"></div>
@@ -135,12 +135,12 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
 <section class="cindy">
   <div class="wrap">
     <div class="row">
-      <img class="hs" src="img/cindy.png" alt="Cindy Litzinger">
+      <img class="hs" src="img/cindy-about.jpg" alt="Cindy Litzinger">
       <div>
         <div class="k">About Cindy</div>
-        <h3>Luxury homes in Placer, Sacramento, and El Dorado Counties. A plan in writing, every time.</h3>
-        <p>I ran businesses before real estate, which is probably why I care so much about the plan being written down. My team and I work Placer, Sacramento, and El Dorado Counties, from Granite Bay and El Dorado Hills to Loomis, Auburn, Folsom, and East Sacramento, and homes that didn't sell the first time are a big part of what we do.</p>
-        <p class="quote">You will get a straight answer from me, in writing, before you sign anything.</p>
+        <h3>Luxury and acreage homes in the Sierra foothills, represented with care.</h3>
+        <p>I'm Cindy Litzinger with eXp Luxury. My team and I specialize in luxury and acreage properties across Placer, Sacramento, and El Dorado Counties, from Granite Bay and El Dorado Hills to Loomis, Auburn, Folsom, and East Sacramento. Much of our work is with homeowners whose first listing didn't get the launch their property deserved.</p><p>We handle the valuation, the preparation, the photography, and the marketing personally, and you'll always know exactly where things stand.</p>
+        <p class="quote">Every home has its buyer. My job is to present yours beautifully and put it in front of the right one.</p>
         <div class="contact"><b>Cindy Litzinger</b> · REALTOR® · eXp Luxury · DRE 02055885<br><a href="tel:+18054781412">805-478-1412</a> · <a href="mailto:cindy@luxandland.com">cindy@luxandland.com</a> · <a href="https://luxandland.com">luxandland.com</a><br><a href="https://calendly.com/realcindylitz/let-s-talk-about-selling-your-home" target="_blank" rel="noopener">Book a time to talk →</a></div>
       </div>
     </div>
@@ -157,7 +157,7 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
 
 <script>
 const LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbx9SyIBHPrmikPBbNSfYC5AWVeQKVbEy6dgXv5JqeOHboyAugslPX0W3iUjYIi6o-hBNQ/exec";   // Google Apps Script Web App /exec URL (apps-script/Code.gs) -> Follow Up Boss. Empty = demo mode (nothing sent).
-const o = {"kick": "Free guide", "h1": "Why Didn't It <em>Sell?</em>", "lead": "A straight answer for luxury homeowners in Placer, Sacramento, and El Dorado Counties: the five honest reasons homes come off the market without an offer, and what I would do differently the second time.", "pts": ["It was priced to hope, not to the closings", "The first six photos lost the showing", "Nobody outside the neighborhood ever saw it", "…and two more, with what I'd do instead"], "name": "Why Didn't It Sell?", "pages": "4 pages · PDF · free", "form": "Send me the guide", "btn": "Send me the guide", "dl": "Download the guide", "file": "guide.pdf", "tags": ["luxuryexpired", "qrguide"], "whyh": "Your phone is ringing with agents right now.", "whyp": "Every one of them has your address, and most of them are saying the same thing. I won't add to the noise. Read the guide, get a real number from closed sales, and ask every agent who calls you for their plan in writing. Mine is already written.", "cols": [["1", "It's almost never the house", "Price strategy, the first six photos, reach, presentation, and what happens after week two. All fixable."], ["2", "Not every buyer is local", "Some are three streets over. IRS migration data says many are moving in from the Bay Area, Los Angeles, San Diego, Phoenix, and Reno, and a lot of them want the land, the oaks, and the lake."], ["3", "I don't relist. I relaunch.", "A walk-through, a number from closed sales, a full reset, a launch date, and a standing update from me every step of the way."]], "tag": "guide"};
+const o = {"kick": "Free guide", "h1": "Why Didn't It <em>Sell?</em>", "lead": "A clear look at the five reasons luxury homes in Placer, Sacramento, and El Dorado Counties come off the market without an offer, and what I would do differently the second time.", "pts": ["It was priced to hope, not to the closings", "The first six photos lost the showing", "Nobody outside the neighborhood ever saw it", "…and two more, with what I'd do instead"], "name": "Why Didn't It Sell?", "pages": "4 pages · PDF · free", "form": "Send me the guide", "btn": "Send me the guide", "dl": "Download the guide", "file": "guide.pdf", "tags": ["luxuryexpired", "qrguide"], "whyh": "A home that didn't sell is usually a home that wasn't launched well.", "whyp": "Most of the luxury homes that come off the market around here were lovely homes with the wrong plan: a price set by what the neighbors were asking, photography that didn't do the property justice, and marketing that never left the county. The guide walks through all five, calmly, so you can decide what you'd like to do next.", "cols": [["1", "Start with the facts", "Closed luxury sales near you, not list prices, show where your home really sits in today's market."], ["2", "Presentation sets the price", "Twilight photography, drone, video, and floor plans shape how a buyer values a property before they ever visit."], ["3", "Reach past the neighborhood", "Buyers arriving from the Bay Area, Los Angeles, San Diego, Phoenix, and Reno need to find your home where they are already looking."]], "tag": "guide"};
 const $ = id => document.getElementById(id);
 $("kick").textContent=o.kick; $("h1").innerHTML=o.h1; $("lead").textContent=o.lead;
 $("pts").innerHTML=o.pts.map(p=>`<li>${p}</li>`).join("");
