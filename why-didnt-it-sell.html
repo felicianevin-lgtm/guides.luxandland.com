@@ -56,6 +56,10 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);bo
 .thanks p{font-size:14px;color:#444;margin:0 0 14px}
 .thanks .btn{margin-bottom:10px}
 .thanks .or{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:center;margin:14px 0 10px}
+.watch{background:#fff;padding:44px 0;text-align:center}
+.watch h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;margin:0 0 18px;color:var(--ink)}
+.watch video{display:block;margin:0 auto;width:100%;max-width:360px;aspect-ratio:9/16;background:#000;border:1px solid #e6e2da;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.watch p{font-size:11px;color:var(--muted);margin:14px 0 0}
 .band{background:var(--cream);padding:44px 0}
 .band h3,.cindy h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;margin:0 0 6px;color:var(--ink)}
 .k{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:8px;font-weight:600}
@@ -121,7 +125,15 @@ footer img{width:160px;display:block;margin-bottom:12px;opacity:.9}
   </div>
 </section>
 
-<!-- VIDEO: when Cindy records the matching script, drop the MP4 + poster into /video and add a <section class="band" id="video"> with a <video> tag here. -->
+
+<section class="watch" id="video">
+  <div class="wrap">
+    <div class="k">Watch · 65 seconds</div>
+    <h3>Your home came off the market. That's not a verdict.</h3>
+    <video controls preload="none" playsinline poster="video/s1-thats-not-a-verdict.jpg"><source src="video/s1-thats-not-a-verdict.mp4" type="video/mp4"></video>
+    <p>Cindy Litzinger, DRE 02055885 · eXp Realty of Northern California, Inc., DRE 02188495</p>
+  </div>
+</section>
 
 <section class="band">
   <div class="wrap">
