@@ -12,6 +12,7 @@ Static site on GitHub Pages (CNAME guides.luxandland.com). Source of truth = thi
 
 `q/` = the postcard QR redirects: `/q/c1` … `/q/c6` → the matching page with `?src=cN` (lands in the FUB note), `/q/home-value` → Cindy's Fello page.
 Change a destination by editing that folder's index.html; the printed QR never changes.
+`get/` = direct-download pages for ad thank-you buttons: `/get/why-didnt-it-sell` … the PDF downloads on load, with a button and an open-in-browser fallback.
 
 Lead capture: `apps-script/Code.gs` runs as a Google Apps Script web app (deploy from felicia@luxandland.com or cindy@luxandland.com; Script Property FUB_API_KEY = Cindy's FUB key).
 Its /exec URL goes into `LEAD_ENDPOINT` on every page: `python build_site_cindy.py --endpoint <url>`.
